@@ -6,6 +6,7 @@
     ../services/minecraft.nix
     ../services/caddy.nix
     ../services/conduit.nix
+    ../services/discord-bridge.nix
   ];
   
   # Hostname
