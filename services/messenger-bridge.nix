@@ -13,7 +13,7 @@ in
     # CREATE USER mautrix_fb;
     # GRANT ALL PRIVILEGES ON DATABASE mautrix_fb TO mautrix_fb;
     configurePostgresql = false;
-    environmentFile = "$dataDir/secret.env";
+    environmentFile = "${dataDir}/secret.env";
     settings = {
       appservice = {
         address = "http://localhost:29319";
