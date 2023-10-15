@@ -35,14 +35,14 @@ in
         };
         username_template = "facebook_{userid}";
         permissions = {
-          "@fusetim:matrix.fusetim.tk" = "admin";
-          "matrix.fusetim.tk" = "relay";
+          "@fusetim:fusetim.tk" = "admin";
+          "fusetim.tk" = "relay";
           "*" = "relay";
         };
       };
       homeserver = {
         address = "https://matrix.fusetim.tk/";
-        domain = "matrix.fusetim.tk";
+        domain = "fusetim.tk";
         software = "standard";
       };
       logging = {
