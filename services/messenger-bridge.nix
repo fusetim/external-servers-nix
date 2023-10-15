@@ -18,7 +18,7 @@ in
       appservice = {
         address = "http://localhost:29319";
         bot_username = "facebookbot";
-        database = "postgresql://mautrix_fb@/mautrix_fb";
+        database = "postgresql://mautrix_fb@127.0.0.1/mautrix_fb";
         hostname = "localhost";
         port = 29319;
       };
