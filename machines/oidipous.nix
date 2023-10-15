@@ -6,7 +6,9 @@
     ../services/minecraft.nix
     ../services/caddy.nix
     ../services/conduit.nix
+    ../services/postgres.nix
     ../services/discord-bridge.nix
+    ../services/messenger-bridge.nix
   ];
   
   # Hostname
@@ -31,6 +33,7 @@
       { from = 443; to = 443; } # Caddy
       { from = 25565; to = 25565; } # Minecraft
       { from = 25575; to = 25575; } # Minecraft RCON
+      { from = 5432;  to = 5432;  } # Postgres
     ];
     firewall.allowedUDPPortRanges = [ 
       { from = 22; to = 22; } # OpenSSH
@@ -38,6 +41,7 @@
       { from = 443; to = 443; } # Caddy
       { from = 25565; to = 25565; } # Minecraft
       { from = 25575; to = 25575; } # Minecraft RCON
+      { from = 5432;  to = 5432;  } # Postgres
     ];
     defaultGateway = "10.0.0.1";
     defaultGateway6 = "";

@@ -38,6 +38,7 @@
         Azkatar = "da061f6c-bf9a-4303-9095-56c0992ea134";
         Spatia = "7db15842-38f1-45f4-a42e-e663c4ccae4d";
         caburp = "382079c8-0cff-4f86-9b09-1cc8216054bc";
+        KinkBnk = "c929dbc6-6af8-4df2-af90-88430a3142dd";
     };
     # see here for more info: https://minecraft.gamepedia.com/Server.properties#server.properties
     serverProperties = {
