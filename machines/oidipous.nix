@@ -34,7 +34,7 @@
       { from = 25565; to = 25565; } # Minecraft
       { from = 25575; to = 25575; } # Minecraft RCON
       { from = 5432;  to = 5432;  } # Postgres
-      { from = 6942; to = 6942; } # Testing purposes
+      { from = 6940; to = 6949; } # Testing purposes
     ];
     firewall.allowedUDPPortRanges = [ 
       { from = 22; to = 22; } # OpenSSH
@@ -43,7 +43,7 @@
       { from = 25565; to = 25565; } # Minecraft
       { from = 25575; to = 25575; } # Minecraft RCON
       { from = 5432;  to = 5432;  } # Postgres
-      { from = 6942; to = 6942; } # Testing purposes
+      { from = 6940; to = 6949; } # Testing purposes
     ];
     defaultGateway = "10.0.0.1";
     defaultGateway6 = "";
