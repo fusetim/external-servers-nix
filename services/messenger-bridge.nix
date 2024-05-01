@@ -33,6 +33,9 @@ in
             share = "cross-signed-tofu";
           };
         };
+        relay = {
+            enabled = true;
+        };
         username_template = "facebook_{userid}";
         permissions = {
           "@fusetim:fusetim.tk" = "admin";
