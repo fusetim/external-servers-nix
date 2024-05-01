@@ -19,7 +19,7 @@ in
         disableTypingNotifications = false;
         disableDeletionForwarding = false;
         disablePortalBridging = true;
-        enableSelfServiceBridging = false;
+        enableSelfServiceBridging = true;
         disableReadReceipts = false;
         disableJoinLeaveNotifications = false;
         disableInviteNotifications = false;
