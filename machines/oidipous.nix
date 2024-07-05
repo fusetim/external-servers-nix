@@ -68,10 +68,5 @@
     settings.PasswordAuthentication = false;
   };
 
-  # Flakes
-  nix.package = pkgs.nixUnstable;
-
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
