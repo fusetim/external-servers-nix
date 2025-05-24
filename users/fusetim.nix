@@ -7,6 +7,7 @@
     extraGroups = [ "wheel" ];
     shell = pkgs.unstable.fish;
     openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGmo3+JoTRn4BihMEamsAz1o1wGMjb5htqjjLbQEINs8 fusetim@nemesis"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOT3nNgT0yHpzwQDkMhLKycRPM617v4CS4Fg2JMFRhqM openpgp:0xB2498BCA"
       "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAHlHDAqVEE9DUbn+/KfsEaXxijd/PpGbkB5FIx8MxXK+h+7NaQCv1nmD4OC81sb7Bz2Tue7kkCNF6lJbwLwU8M88QCjFXk8j8qp0ahw/KArJYEPf8L7UrGrSuLyaZlvXeIDfuePXx/JImLe3vrs1hl8wOX3PiMHWtGTBvD7JiKcpSGvqQ== (none)"
     ];
