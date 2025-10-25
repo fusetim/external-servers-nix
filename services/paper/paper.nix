@@ -7,7 +7,7 @@ let
     sha256 = "sha256:42c864b203ac6349e22305c13ec3ad3f9831067513c1fdc32a13bdf85f34c794";
     curlOptsList = [
       "--user-agent" "fusetim/external-servers-nix/1.0.0 (https://github.com/fusetim/external-servers-nix)"
-    ]
+    ];
   };
 in pkgs.stdenv.mkDerivation {
   pname = "papermc";
