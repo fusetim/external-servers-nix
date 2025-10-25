@@ -28,7 +28,7 @@ in
             port = 29319;
           };
           database = {
-            type = "postgresql";
+            type = "postgres";
             uri = "postgresql://mautrix_meta@127.0.0.1/mautrix_meta";
           };
           encryption = {
