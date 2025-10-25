@@ -69,4 +69,8 @@
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "olm-3.2.16"
+  ];
 }
