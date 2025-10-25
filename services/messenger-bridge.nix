@@ -5,6 +5,7 @@ let
 in
 {
   services.mautrix-meta = {
+    package = pkgs.unstable.mautrix-meta;
     # Postgresql will not be automatically configured.
     # On new install, you will need to :
     # run these commands in psql (using sudo -u postgres psql) on install:
