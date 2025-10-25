@@ -29,7 +29,7 @@ in
           };
           database = {
             type = "postgres";
-            uri = "postgresql://mautrix_meta@127.0.0.1/mautrix_meta";
+            uri = "postgresql://mautrix_meta@127.0.0.1/mautrix_meta?sslmode=disable";
           };
           encryption = {
             allow = true;
