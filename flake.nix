@@ -1,8 +1,8 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
   inputs.nixpkgs_unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-  inputs.home-manager.url = "github:nix-community/home-manager/release-24.05";
+  inputs.home-manager.url = "github:nix-community/home-manager/release-24.11";
   inputs.home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
   outputs =
@@ -19,6 +19,9 @@
           })
         ];
       };
+      legacy-module = { config, ... }: {
+        nixpkgs.config.permittedInsecurePackages = [ "olm-3.2.16" ];
+      };
     in {
       nixosConfigurations.oidipous = nixpkgs.lib.nixosSystem {
         system = "aarch64-linux";
@@ -30,6 +33,7 @@
               nixpkgs.lib.mkIf (self ? rev) self.rev;
           })
           (import ./machines/oidipous.nix)
+          legacy-module
           unstable-module
           home-manager.nixosModules.home-manager
         ];
