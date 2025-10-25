@@ -3,8 +3,11 @@ let
   mcVersion = "1.19.2";
   buildNum = "237";
   jar = pkgs.fetchurl {
-    url = "https://papermc.io/api/v2/projects/paper/versions/${mcVersion}/builds/${buildNum}/downloads/paper-${mcVersion}-${buildNum}.jar";
-    sha256 = "sha256:09gb70rrv18hbrbhyw0mb92xspia1c9g6lpvqj88j65xckzgl3bl";
+    url = "https://fill-data.papermc.io/v1/objects/42c864b203ac6349e22305c13ec3ad3f9831067513c1fdc32a13bdf85f34c794/paper-1.19.2-237-mojang.jar";
+    sha256 = "sha256:42c864b203ac6349e22305c13ec3ad3f9831067513c1fdc32a13bdf85f34c794";
+    curlOptsList = [
+      "--user-agent" "fusetim/external-servers-nix/1.0.0 (https://github.com/fusetim/external-servers-nix)"
+    ]
   };
 in pkgs.stdenv.mkDerivation {
   pname = "papermc";
